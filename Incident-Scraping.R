@@ -26,6 +26,7 @@ sub_cols <- c("year_of_incident", "watch", "type_of_incident", "type_location","
               "update_date","x_coordinate","y_cordinate","zip_code","city","state","location1")
 
 police_incident_clean <- police_incident_raw %>% 
+  slice(1:1000) %>%
   select(contains(sub_cols))
 
 readr::write_csv(police_incident_clean,paste0("data/", Sys.Date(), "police_incident", ".csv"))
