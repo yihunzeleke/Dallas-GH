@@ -29,4 +29,4 @@ police_incident_clean <- police_incident_raw %>%
   slice(1:1000) %>%
   select(contains(sub_cols))
 
-readr::write_csv(police_incident_clean,paste0("data/", Sys.Date(), "police_incident", ".csv"))
+readr::write_csv(police_incident_clean,paste0("data/", Sys.Date(), "-police_incident", ".csv"))
