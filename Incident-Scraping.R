@@ -1,4 +1,4 @@
-library(tidyverse)
+library(dplyr)
 
 # Dallas County Police incident open data web URL for csv file format
 
